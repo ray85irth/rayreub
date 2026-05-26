@@ -10,7 +10,7 @@ import { Link } from 'expo-router';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#6F05E5', dark: '#6F05E5' }}
+      headerBackgroundColor={{ light: '#000000', dark: '#0e000c' }}
       headerImage={
         <Image
           source={require('@/assets/images/orbit.logo.png')}
@@ -103,14 +103,15 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+    gap: 14,
+    marginBottom: 4,
   },
   reactLogo: {
-    height: 178,
+    height: 200,
     width: 290,
-    bottom: 0,
+    bottom: 35,
     left: 800,
     position: 'absolute',
+    marginBottom: 2,
   },
 });
